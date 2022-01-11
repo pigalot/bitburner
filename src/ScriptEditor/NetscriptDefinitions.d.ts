@@ -6211,6 +6211,8 @@ interface CorporationInfo {
   sharePrice: number;
   /** State of the corporation. Possible states are START, PURCHASE, PRODUCTION, SALE, EXPORT. */
   state: string;
+  /** Array of all divisions */
+  divisions: Division[];
 }
 
 /**
