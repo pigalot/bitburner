@@ -6138,6 +6138,12 @@ export interface WarehouseAPI {
  */
 export interface Corporation extends WarehouseAPI, OfficeAPI {
   /**
+   * Create a Corporation
+   * @param divisionName - Name of the division
+   * @returns true if created and false if not 
+   */
+   createCorporation(corporationName: string, selfFund: boolean): boolean;
+  /**
    * Get corporation data
    * @returns Corporation data
    */
