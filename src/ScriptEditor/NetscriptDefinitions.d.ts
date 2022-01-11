@@ -5963,6 +5963,18 @@ export interface OfficeAPI {
    * @returns Employee data
    */
   getEmployee(divisionName: string, cityName: string, employeeName: string): Employee;
+  /**
+   * Get the cost to Hire AdVert
+   * @param divisionName - Name of the division
+   * @returns Cost
+   */
+  getHireAdVertCost(adivisionName: string): number;
+  /**
+   * Get the number of times you have Hired AdVert
+   * @param divisionName - Name of the division
+   * @returns Number of times you have Hired AdVert
+   */
+  getHireAdVertCount(adivisionName: string): number;
 }
 
 /**
@@ -6131,6 +6143,21 @@ export interface WarehouseAPI {
     designInvest: number,
     marketingInvest: number,
   ): void;
+  /**
+   * Gets the cost to purchase a warehouse
+   * @returns cost
+   */
+  getPurchaseWarehouseCost(): number;
+  /**
+   * Gets the cost to upgrade a warehouse to the next level
+   * @returns cost to upgrade
+   */
+  getUpgradeWarehouseCost(adivisionName: any, acityName: any): number;
+  /**
+   * Check if you have a warehouse in city
+   * @returns true if warehouse is present, false if not
+   */
+  hasWarehouse(adivisionName: any, acityName: any): boolean;
 }
 
 /**
@@ -6143,7 +6170,42 @@ export interface Corporation extends WarehouseAPI, OfficeAPI {
    * @param divisionName - Name of the division
    * @returns true if created and false if not 
    */
-   createCorporation(corporationName: string, selfFund: boolean): boolean;
+  createCorporation(corporationName: string, selfFund: boolean): boolean;
+  /**
+   * Check if you have a one time unlockable upgrade
+   * @param upgradeName - Name of the upgrade
+   * @returns true if unlocked and false if not 
+   */
+  hasUnlockUpgrade(upgradeName: string): boolean;
+  /**
+   * Gets the cost to unlock a one time unlockable upgrade
+   * @param upgradeName - Name of the upgrade
+   * @returns cost of the upgrade
+   */
+  getUnlockUpgradeCost(upgradeName: string): number;
+  /**
+   * Get the level of a levelable upgrade
+   * @param upgradeName - Name of the upgrade
+   * @returns the level of the upgrade
+   */
+  getUpgradeLevel(upgradeName: string): number;
+  /**
+   * Gets the cost to unlock the next level of a levelable upgrade
+   * @param upgradeName - Name of the upgrade
+   * @returns cost of the upgrade
+   */
+  getUpgradeLevelCost(upgradeName: string): number;
+  /**
+   * Gets the cost to expand into a new industry
+   * @param industryName - Name of the industry
+   * @returns cost
+   */
+  getExpandIndustryCost(industryName: string): number;
+  /**
+   * Gets the cost to expand into a new city
+   * @returns cost
+   */
+  getExpandCityCost(): number;
   /**
    * Get corporation data
    * @returns Corporation data
@@ -6284,6 +6346,8 @@ interface Warehouse {
   size: number;
   /** Used space in the warehouse */
   sizeUsed: number;
+  /** Smart Supply status in the warehouse */
+  smartSupplyEnabled: boolean;
 }
 
 /**
