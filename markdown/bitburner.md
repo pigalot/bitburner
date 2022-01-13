@@ -43,6 +43,8 @@
 |  [HacknetMultipliers](./bitburner.hacknetmultipliers.md) | Hacknet related multipliers. |
 |  [HacknetNodesFormulas](./bitburner.hacknetnodesformulas.md) | Hacknet Node formulas |
 |  [HacknetServersFormulas](./bitburner.hacknetserversformulas.md) | Hacknet Server formulas |
+|  [InvestmentOffer](./bitburner.investmentoffer.md) | Corporation investment offer |
+|  [IPort](./bitburner.iport.md) | Interface of a netscript port |
 |  [Material](./bitburner.material.md) | Material in a warehouse |
 |  [NodeStats](./bitburner.nodestats.md) | Object representing all the values related to a hacknet node. |
 |  [NS](./bitburner.ns.md) | Collection of all functions passed to scripts |

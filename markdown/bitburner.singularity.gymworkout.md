@@ -4,7 +4,7 @@
 
 ## Singularity.gymWorkout() method
 
-SF4.1 - Workout at the gym.
+Workout at the gym.
 
 <b>Signature:</b>
 
@@ -27,7 +27,7 @@ True if actions is successfully started, false otherwise.
 
 ## Remarks
 
-RAM cost: 2 GB
+RAM cost: 2 GB \* 16/4/1
 
 This function will automatically set you to start working out at a gym to train a particular stat. If you are already in the middle of some “working” action (such as working at a company, for a faction, or on a program), then running this function will automatically cancel that action and give you your earnings.
 

@@ -5208,6 +5208,93 @@
           "members": [
             {
               "kind": "MethodSignature",
+              "canonicalReference": "bitburner!Corporation#acceptInvestmentOffer:member(1)",
+              "docComment": "/**\n * Accept investment based on you companies current valuation\n *\n * @remarks\n *\n * Is based on current valuation and will not honer a specific Offer\n *\n * @returns An offer of investment\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "acceptInvestmentOffer(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "acceptInvestmentOffer"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!Corporation#createCorporation:member(1)",
+              "docComment": "/**\n * Create a Corporation\n *\n * @param divisionName - Name of the division\n *\n * @returns true if created and false if not\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "createCorporation(corporationName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", selfFund: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "corporationName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "selfFund",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "createCorporation"
+            },
+            {
+              "kind": "MethodSignature",
               "canonicalReference": "bitburner!Corporation#expandCity:member(1)",
               "docComment": "/**\n * Expand to a new city\n *\n * @param divisionName - Name of the division\n *\n * @param cityName - Name of the city\n */\n",
               "excerptTokens": [
@@ -5400,6 +5487,327 @@
             },
             {
               "kind": "MethodSignature",
+              "canonicalReference": "bitburner!Corporation#getExpandCityCost:member(1)",
+              "docComment": "/**\n * Gets the cost to expand into a new city\n *\n * @returns cost\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getExpandCityCost(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getExpandCityCost"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!Corporation#getExpandIndustryCost:member(1)",
+              "docComment": "/**\n * Gets the cost to expand into a new industry\n *\n * @param industryName - Name of the industry\n *\n * @returns cost\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getExpandIndustryCost(industryName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "industryName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "getExpandIndustryCost"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!Corporation#getInvestmentOffer:member(1)",
+              "docComment": "/**\n * Get an offer for investment based on you companies current valuation\n *\n * @returns An offer of investment\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getInvestmentOffer(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "InvestmentOffer",
+                  "canonicalReference": "bitburner!InvestmentOffer:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getInvestmentOffer"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!Corporation#getUnlockUpgradeCost:member(1)",
+              "docComment": "/**\n * Gets the cost to unlock a one time unlockable upgrade\n *\n * @param upgradeName - Name of the upgrade\n *\n * @returns cost of the upgrade\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getUnlockUpgradeCost(upgradeName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "upgradeName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "getUnlockUpgradeCost"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!Corporation#getUpgradeLevel:member(1)",
+              "docComment": "/**\n * Get the level of a levelable upgrade\n *\n * @param upgradeName - Name of the upgrade\n *\n * @returns the level of the upgrade\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getUpgradeLevel(upgradeName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "upgradeName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "getUpgradeLevel"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!Corporation#getUpgradeLevelCost:member(1)",
+              "docComment": "/**\n * Gets the cost to unlock the next level of a levelable upgrade\n *\n * @param upgradeName - Name of the upgrade\n *\n * @returns cost of the upgrade\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getUpgradeLevelCost(upgradeName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "upgradeName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "getUpgradeLevelCost"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!Corporation#goPublic:member(1)",
+              "docComment": "/**\n * Go public\n *\n * @param numShares - number of shares you would like to issue for your IPO\n *\n * @returns true if you successfully go public, false if not\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "goPublic(numShares: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "numShares",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "goPublic"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!Corporation#hasUnlockUpgrade:member(1)",
+              "docComment": "/**\n * Check if you have a one time unlockable upgrade\n *\n * @param upgradeName - Name of the upgrade\n *\n * @returns true if unlocked and false if not\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "hasUnlockUpgrade(upgradeName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "upgradeName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "hasUnlockUpgrade"
+            },
+            {
+              "kind": "MethodSignature",
               "canonicalReference": "bitburner!Corporation#issueDividends:member(1)",
               "docComment": "/**\n * Issue dividends\n *\n * @param percent - Percent of profit to issue as dividends.\n */\n",
               "excerptTokens": [
@@ -5489,7 +5897,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Corporation#unlockUpgrade:member(1)",
-              "docComment": "/**\n * Unlock an upgrade.\n *\n * @param upgradeName - Name of the upgrade\n */\n",
+              "docComment": "/**\n * Unlock an upgrade.npm run doc\n *\n * @param upgradeName - Name of the upgrade\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -5555,6 +5963,37 @@
           "releaseTag": "Public",
           "name": "CorporationInfo",
           "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!CorporationInfo#divisions:member",
+              "docComment": "/**\n * Array of all divisions\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "divisions: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Division",
+                  "canonicalReference": "bitburner!Division:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "divisions",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            },
             {
               "kind": "PropertySignature",
               "canonicalReference": "bitburner!CorporationInfo#expenses:member",
@@ -6570,6 +7009,32 @@
               "isOptional": false,
               "releaseTag": "Public",
               "name": "prodMult",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!Division#products:member",
+              "docComment": "/**\n * Products developed by this division\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "products: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "products",
               "propertyTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -13878,6 +14343,298 @@
         },
         {
           "kind": "Interface",
+          "canonicalReference": "bitburner!InvestmentOffer:interface",
+          "docComment": "/**\n * Corporation investment offer\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "interface InvestmentOffer "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "InvestmentOffer",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!InvestmentOffer#funds:member",
+              "docComment": "/**\n * Amount of funds you will get from this investment\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "funds: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "funds",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!InvestmentOffer#round:member",
+              "docComment": "/**\n * Current round of funding (max 4)\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "round: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "round",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!InvestmentOffer#shares:member",
+              "docComment": "/**\n * Amount of share you will give in exchange for this investment\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "shares: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "shares",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "bitburner!IPort:interface",
+          "docComment": "/**\n * Interface of a netscript port\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface IPort "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "IPort",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!IPort#clear:member",
+              "docComment": "/**\n * removes all data from port\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "clear: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "clear",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!IPort#empty:member",
+              "docComment": "/**\n * check if port is empty\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "empty: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "empty",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!IPort#full:member",
+              "docComment": "/**\n * check if port is full\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "full: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "full",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!IPort#peek:member",
+              "docComment": "/**\n * reads first element without removing it from port if no data in port returns \"NULL PORT DATA\"\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "peek: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "peek",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!IPort#read:member",
+              "docComment": "/**\n * reads and removes first element from port if no data in port returns \"NULL PORT DATA\"\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "read: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "() => any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "read",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!IPort#tryWrite:member",
+              "docComment": "/**\n * add data to port if not full.\n *\n * @returns true if added and false if full and not added\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tryWrite: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(value: any) => boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "tryWrite",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!IPort#write:member",
+              "docComment": "/**\n * write data to the port and removes and returns first element if full\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "write: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(value: any) => any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "write",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
           "canonicalReference": "bitburner!Material:interface",
           "docComment": "/**\n * Material in a warehouse\n *\n * @public\n */\n",
           "excerptTokens": [
@@ -13910,6 +14667,32 @@
               "isOptional": false,
               "releaseTag": "Public",
               "name": "name",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!Material#prod:member",
+              "docComment": "/**\n * Amount of material produced\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "prod: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "prod",
               "propertyTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -13962,6 +14745,32 @@
               "isOptional": false,
               "releaseTag": "Public",
               "name": "qty",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!Material#sell:member",
+              "docComment": "/**\n * Amount of material sold\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "sell: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "sell",
               "propertyTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -15466,8 +16275,9 @@
                   "text": "): "
                 },
                 {
-                  "kind": "Content",
-                  "text": "any[]"
+                  "kind": "Reference",
+                  "text": "IPort",
+                  "canonicalReference": "bitburner!IPort:interface"
                 },
                 {
                   "kind": "Content",
@@ -18626,7 +19436,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": "string[]"
+                  "text": "any[]"
                 },
                 {
                   "kind": "Content",
@@ -18900,7 +19710,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!NS#toast:member(1)",
-              "docComment": "/**\n * Queue a toast (bottom-right notification).\n *\n * @param msg - Message in the toast.\n *\n * @param variant - Type of toast, must be one of success, info, warning, error. Defaults to success.\n *\n * @param duration - Duration of toast in ms, defaults to 2000\n */\n",
+              "docComment": "/**\n * Queue a toast (bottom-right notification).\n *\n * @param msg - Message in the toast.\n *\n * @param variant - Type of toast, must be one of success, info, warning, error. Defaults to success.\n *\n * @param duration - Duration of toast in ms. Can also be `null` to create a persistent toast. Defaults to 2000\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -18924,7 +19734,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": "number"
+                  "text": "number | null"
                 },
                 {
                   "kind": "Content",
@@ -19184,7 +19994,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": "string[]"
+                  "text": "any[]"
                 },
                 {
                   "kind": "Content",
@@ -20077,6 +20887,94 @@
             },
             {
               "kind": "MethodSignature",
+              "canonicalReference": "bitburner!OfficeAPI#getHireAdVertCost:member(1)",
+              "docComment": "/**\n * Get the cost to Hire AdVert\n *\n * @param divisionName - Name of the division\n *\n * @returns Cost\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getHireAdVertCost(divisionName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "divisionName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "getHireAdVertCost"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!OfficeAPI#getHireAdVertCount:member(1)",
+              "docComment": "/**\n * Get the number of times you have Hired AdVert\n *\n * @param divisionName - Name of the division\n *\n * @returns Number of times you have Hired AdVert\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getHireAdVertCount(adivisionName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "adivisionName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "getHireAdVertCount"
+            },
+            {
+              "kind": "MethodSignature",
               "canonicalReference": "bitburner!OfficeAPI#getOffice:member(1)",
               "docComment": "/**\n * Get data about an office\n *\n * @param divisionName - Name of the division\n *\n * @param cityName - Name of the city\n *\n * @returns Office data\n */\n",
               "excerptTokens": [
@@ -20137,6 +21035,124 @@
             },
             {
               "kind": "MethodSignature",
+              "canonicalReference": "bitburner!OfficeAPI#getResearchCost:member(1)",
+              "docComment": "/**\n * Get the cost to unlock research\n *\n * @param divisionName - Name of the division\n *\n * @param cityName - Name of the city\n *\n * @returns cost\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getResearchCost(divisionName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", researchName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "divisionName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "researchName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "getResearchCost"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!OfficeAPI#hasResearched:member(1)",
+              "docComment": "/**\n * Gets if you have unlocked a research\n *\n * @param divisionName - Name of the division\n *\n * @param cityName - Name of the city\n *\n * @returns true is unlocked, false if not\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "hasResearched(divisionName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", researchName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "divisionName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "researchName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "hasResearched"
+            },
+            {
+              "kind": "MethodSignature",
               "canonicalReference": "bitburner!OfficeAPI#hireAdVert:member(1)",
               "docComment": "/**\n * Hire AdVert.\n *\n * @param divisionName - Name of the division\n */\n",
               "excerptTokens": [
@@ -20182,7 +21198,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!OfficeAPI#hireEmployee:member(1)",
-              "docComment": "/**\n * Assign an employee to a job.\n *\n * @param divisionName - Name of the division\n *\n * @param cityName - Name of the city\n *\n * @returns The newly hired employee, if any\n */\n",
+              "docComment": "/**\n * Hire an employee.\n *\n * @param divisionName - Name of the division\n *\n * @param cityName - Name of the city\n *\n * @returns The newly hired employee, if any\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -20246,7 +21262,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!OfficeAPI#research:member(1)",
-              "docComment": "/**\n * Hire AdVert.\n *\n * @param divisionName - Name of the division\n *\n * @param researchName - Name of the research\n */\n",
+              "docComment": "/**\n * purchace a research\n *\n * @param divisionName - Name of the division\n *\n * @param researchName - Name of the research\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -20304,8 +21320,102 @@
             },
             {
               "kind": "MethodSignature",
+              "canonicalReference": "bitburner!OfficeAPI#setAutoJobAssignment:member(1)",
+              "docComment": "/**\n * Set the auto job assignment for a job\n *\n * @param divisionName - Name of the division\n *\n * @param cityName - Name of the city\n *\n * @param job - Name of the job\n *\n * @param amount - Number of employees to assign to that job\n *\n * @returns A promise that is fulfilled when the assignment is complete.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setAutoJobAssignment(divisionName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", cityName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", job: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", amount: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<boolean>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "divisionName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "cityName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "job",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                },
+                {
+                  "parameterName": "amount",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  }
+                }
+              ],
+              "name": "setAutoJobAssignment"
+            },
+            {
+              "kind": "MethodSignature",
               "canonicalReference": "bitburner!OfficeAPI#throwParty:member(1)",
-              "docComment": "/**\n * Assign an employee to a job.\n *\n * @param divisionName - Name of the division\n *\n * @param cityName - Name of the city\n *\n * @param costPerEmployee - Amount to spend per employee.\n *\n * @returns Amount of happiness increased.\n */\n",
+              "docComment": "/**\n * Throw a party for your employees\n *\n * @param divisionName - Name of the division\n *\n * @param cityName - Name of the city\n *\n * @param costPerEmployee - Amount to spend per employee.\n *\n * @returns Amount of happiness increased.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -21747,6 +22857,32 @@
             },
             {
               "kind": "PropertySignature",
+              "canonicalReference": "bitburner!Player#hasCorporation:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "hasCorporation: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "hasCorporation",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
               "canonicalReference": "bitburner!Player#hasTixApiAccess:member",
               "docComment": "",
               "excerptTokens": [
@@ -23043,6 +24179,32 @@
           "members": [
             {
               "kind": "PropertySignature",
+              "canonicalReference": "bitburner!Product#cityData:member",
+              "docComment": "/**\n * Data refers to the production, sale, and quantity of the products These values are specific to a city For each city, the data is [qty, prod, sell]\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "cityData: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{[key: string]:number[]}"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "cityData",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
               "canonicalReference": "bitburner!Product#cmp:member",
               "docComment": "/**\n * Competition for the product\n */\n",
               "excerptTokens": [
@@ -23062,6 +24224,32 @@
               "isOptional": false,
               "releaseTag": "Public",
               "name": "cmp",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!Product#developmentProgress:member",
+              "docComment": "/**\n * Creation progress - A number betwee 0-100 representing percentage\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "developmentProgress: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "developmentProgress",
               "propertyTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -24171,7 +25359,7 @@
         {
           "kind": "Interface",
           "canonicalReference": "bitburner!Singularity:interface",
-          "docComment": "/**\n * Singularity API\n *\n * @remarks\n *\n * This API requires Source-File 4 level 1 / 2 / 3 to use.\n *\n * @public\n */\n",
+          "docComment": "/**\n * Singularity API\n *\n * @remarks\n *\n * This API requires Source-File 4 level 1 to use. The RAM cost of all these functions is multiplied by 16/4/1 based on Source-File 4 levels.\n *\n * @public\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -24184,7 +25372,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#applyToCompany:member(1)",
-              "docComment": "/**\n * SF4.2 - Apply for a job at a company.\n *\n * @remarks\n *\n * RAM cost: 3 GB\n *\n * This function will automatically try to apply to the specified company for a position in the specified field. This function can also be used to apply for promotions by specifying the company and field you are already employed at.\n *\n * This function will return true if you successfully get a job/promotion, and false otherwise. Note that if you are trying to use this function to apply for a promotion and you don’t get one, it will return false.\n *\n * @param companyName - Name of company to apply to.\n *\n * @param field - Field to which you want to apply.\n *\n * @returns True if the player successfully get a job/promotion, and false otherwise.\n */\n",
+              "docComment": "/**\n * Apply for a job at a company.\n *\n * @remarks\n *\n * RAM cost: 3 GB * 16/4/1\n *\n * This function will automatically try to apply to the specified company for a position in the specified field. This function can also be used to apply for promotions by specifying the company and field you are already employed at.\n *\n * This function will return true if you successfully get a job/promotion, and false otherwise. Note that if you are trying to use this function to apply for a promotion and you don’t get one, it will return false.\n *\n * @param companyName - Name of company to apply to.\n *\n * @param field - Field to which you want to apply.\n *\n * @returns True if the player successfully get a job/promotion, and false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24243,7 +25431,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#checkFactionInvitations:member(1)",
-              "docComment": "/**\n * SF4.2 - List all current faction invitations.\n *\n * @remarks\n *\n * RAM cost: 3 GB\n *\n * Returns an array with the name of all Factions you currently have oustanding invitations from.\n *\n * @returns Array with the name of all Factions you currently have oustanding invitations from.\n */\n",
+              "docComment": "/**\n * List all current faction invitations.\n *\n * @remarks\n *\n * RAM cost: 3 GB * 16/4/1\n *\n * Returns an array with the name of all Factions you currently have oustanding invitations from.\n *\n * @returns Array with the name of all Factions you currently have oustanding invitations from.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24271,7 +25459,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#commitCrime:member(1)",
-              "docComment": "/**\n * SF4.3 - Commit a crime.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * This function is used to automatically attempt to commit crimes. If you are already in the middle of some ‘working’ action (such as working for a company or training at a gym), then running this function will automatically cancel that action and give you your earnings.\n *\n * This function returns the number of milliseconds it takes to attempt the specified crime (e.g It takes 60 seconds to attempt the ‘Rob Store’ crime, so running `commitCrime('rob store')` will return 60,000).\n *\n * Warning: I do not recommend using the time returned from this function to try and schedule your crime attempts. Instead, I would use the isBusy Singularity function to check whether you have finished attempting a crime. This is because although the game sets a certain crime to be X amount of seconds, there is no guarantee that your browser will follow that time limit.\n *\n * @param crime - Name of crime to attempt.\n *\n * @returns True if you successfully start working on the specified program, and false otherwise.\n */\n",
+              "docComment": "/**\n * Commit a crime.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * This function is used to automatically attempt to commit crimes. If you are already in the middle of some ‘working’ action (such as working for a company or training at a gym), then running this function will automatically cancel that action and give you your earnings.\n *\n * This function returns the number of milliseconds it takes to attempt the specified crime (e.g It takes 60 seconds to attempt the ‘Rob Store’ crime, so running `commitCrime('rob store')` will return 60,000).\n *\n * Warning: I do not recommend using the time returned from this function to try and schedule your crime attempts. Instead, I would use the isBusy Singularity function to check whether you have finished attempting a crime. This is because although the game sets a certain crime to be X amount of seconds, there is no guarantee that your browser will follow that time limit.\n *\n * @param crime - Name of crime to attempt.\n *\n * @returns The number of milliseconds it takes to attempt the specified crime.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24315,7 +25503,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#connect:member(1)",
-              "docComment": "/**\n * SF4.1 - Connect to a server.\n *\n * @remarks\n *\n * RAM cost: 2 GB\n *\n * Run the connect HOSTNAME command in the terminal. Can only connect to neighbors.\n *\n * @returns True if the connect command was successful, false otherwise.\n */\n",
+              "docComment": "/**\n * Connect to a server.\n *\n * @remarks\n *\n * RAM cost: 2 GB * 16/4/1\n *\n * Run the connect HOSTNAME command in the terminal. Can only connect to neighbors.\n *\n * @returns True if the connect command was successful, false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24359,7 +25547,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#createProgram:member(1)",
-              "docComment": "/**\n * SF4.3 - Create a program.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * This function will automatically set you to start working on creating the specified program. If you are already in the middle of some “working” action (such as working for a company, training at a gym, or taking a course), then running this function will automatically cancel that action and give you your earnings.\n *\n * This function returns true if you successfully start working on the specified program, and false otherwise.\n *\n * Note that creating a program using this function has the same hacking level requirements as it normally would. These level requirements are: * BruteSSH.exe: 50 * FTPCrack.exe: 100 * relaySMTP.exe: 250 * HTTPWorm.exe: 500 * SQLInject.exe: 750 * DeepscanV1.exe: 75 * DeepscanV2.exe: 400 * ServerProfiler.exe: 75 * AutoLink.exe: 25\n *\n * @param program - Name of program to create.\n *\n * @returns True if you successfully start working on the specified program, and false otherwise.\n *\n * @example\n * ```ts\n * // NS1:\n * createProgram(“relaysmtp.exe”);\n * ```\n *\n * @example\n * ```ts\n * // NS2:\n * ns.createProgram(“relaysmtp.exe”);\n * ```\n *\n */\n",
+              "docComment": "/**\n * Create a program.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * This function will automatically set you to start working on creating the specified program. If you are already in the middle of some “working” action (such as working for a company, training at a gym, or taking a course), then running this function will automatically cancel that action and give you your earnings.\n *\n * This function returns true if you successfully start working on the specified program, and false otherwise.\n *\n * Note that creating a program using this function has the same hacking level requirements as it normally would. These level requirements are: * BruteSSH.exe: 50 * FTPCrack.exe: 100 * relaySMTP.exe: 250 * HTTPWorm.exe: 500 * SQLInject.exe: 750 * DeepscanV1.exe: 75 * DeepscanV2.exe: 400 * ServerProfiler.exe: 75 * AutoLink.exe: 25\n *\n * @param program - Name of program to create.\n *\n * @returns True if you successfully start working on the specified program, and false otherwise.\n *\n * @example\n * ```ts\n * // NS1:\n * createProgram(“relaysmtp.exe”);\n * ```\n *\n * @example\n * ```ts\n * // NS2:\n * ns.createProgram(“relaysmtp.exe”);\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24403,7 +25591,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#donateToFaction:member(1)",
-              "docComment": "/**\n * SF4.3 - Donate to a faction.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * Attempts to donate money to the specified faction in exchange for reputation. Returns true if you successfully donate the money, and false otherwise.\n *\n * @param faction - Name of faction to donate to.\n *\n * @param amount - Amount of money to donate.\n *\n * @returns True if the money was donated, and false otherwise.\n */\n",
+              "docComment": "/**\n * Donate to a faction.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * Attempts to donate money to the specified faction in exchange for reputation. Returns true if you successfully donate the money, and false otherwise.\n *\n * @param faction - Name of faction to donate to.\n *\n * @param amount - Amount of money to donate.\n *\n * @returns True if the money was donated, and false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24462,7 +25650,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getAugmentationCost:member(1)",
-              "docComment": "/**\n * SF4.3 - Get the price and reputation of an augmentation.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * This function returns an array with two elements that gives the cost for the specified Augmentation. The first element in the returned array is the reputation requirement of the Augmentation, and the second element is the money cost.\n *\n * If an invalid Augmentation name is passed in for the augName argument, this function will return the array [-1, -1].\n *\n * @deprecated\n *\n * use getAugmentationPrice getAugmentationRepCost\n *\n * @param augName - Name of Augmentation.\n *\n * @returns Array with first element as a reputation requirement and second element as the money cost.\n */\n",
+              "docComment": "/**\n * Get the price and reputation of an augmentation.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * This function returns an array with two elements that gives the cost for the specified Augmentation. The first element in the returned array is the reputation requirement of the Augmentation, and the second element is the money cost.\n *\n * If an invalid Augmentation name is passed in for the augName argument, this function will return the array [-1, -1].\n *\n * @deprecated\n *\n * use getAugmentationPrice getAugmentationRepCost\n *\n * @param augName - Name of Augmentation.\n *\n * @returns Array with first element as a reputation requirement and second element as the money cost.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24506,7 +25694,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getAugmentationPrereq:member(1)",
-              "docComment": "/**\n * SF4.3 - Get the pre-requisite of an augmentation.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * This function returns an array with the names of the prerequisite Augmentation(s) for the specified Augmentation. If there are no prerequisites, a blank array is returned.\n *\n * @param augName - Name of Augmentation.\n *\n * @returns Array with the names of the prerequisite Augmentation(s) for the specified Augmentation.\n */\n",
+              "docComment": "/**\n * Get the pre-requisite of an augmentation.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * This function returns an array with the names of the prerequisite Augmentation(s) for the specified Augmentation. If there are no prerequisites, a blank array is returned.\n *\n * @param augName - Name of Augmentation.\n *\n * @returns Array with the names of the prerequisite Augmentation(s) for the specified Augmentation.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24550,7 +25738,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getAugmentationPrice:member(1)",
-              "docComment": "/**\n * SF4.3 - Get price of an augmentation.\n *\n * @remarks\n *\n * RAM cost: 2.5 GB\n *\n * @param augName - Name of Augmentation.\n *\n * @returns Price of the augmentation.\n */\n",
+              "docComment": "/**\n * Get price of an augmentation.\n *\n * @remarks\n *\n * RAM cost: 2.5 GB * 16/4/1\n *\n * @param augName - Name of Augmentation.\n *\n * @returns Price of the augmentation.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24594,7 +25782,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getAugmentationRepReq:member(1)",
-              "docComment": "/**\n * SF4.3 - Get reputation requirement of an augmentation.\n *\n * @remarks\n *\n * RAM cost: 2.5 GB\n *\n * @param augName - Name of Augmentation.\n *\n * @returns Reputation requirement of the augmentation.\n */\n",
+              "docComment": "/**\n * Get reputation requirement of an augmentation.\n *\n * @remarks\n *\n * RAM cost: 2.5 GB * 16/4/1\n *\n * @param augName - Name of Augmentation.\n *\n * @returns Reputation requirement of the augmentation.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24638,7 +25826,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getAugmentationsFromFaction:member(1)",
-              "docComment": "/**\n * SF4.3 - Get a list of augmentation available from a faction.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * Returns an array containing the names (as strings) of all Augmentations that are available from the specified faction.\n *\n * @param faction - Name of faction.\n *\n * @returns Array containing the names of all Augmentations.\n */\n",
+              "docComment": "/**\n * Get a list of augmentation available from a faction.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * Returns an array containing the names (as strings) of all Augmentations that are available from the specified faction.\n *\n * @param faction - Name of faction.\n *\n * @returns Array containing the names of all Augmentations.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24682,7 +25870,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getAugmentationStats:member(1)",
-              "docComment": "/**\n * SF4.3 - Get the stats of an augmentation.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * This function returns augmentation stats.\n *\n * @param name - Name of Augmentation. CASE-SENSITIVE.\n *\n * @returns Augmentation stats.\n */\n",
+              "docComment": "/**\n * Get the stats of an augmentation.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * This function returns augmentation stats.\n *\n * @param name - Name of Augmentation. CASE-SENSITIVE.\n *\n * @returns Augmentation stats.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24727,7 +25915,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getCharacterInformation:member(1)",
-              "docComment": "/**\n * SF4.1 - Returns an object with various information about your character.\n *\n * @remarks\n *\n * RAM cost: 0.5 GB\n *\n * @deprecated\n *\n * use getPlayer\n *\n * @returns Object with various information about your character.\n */\n",
+              "docComment": "/**\n * Returns an object with various information about your character.\n *\n * @remarks\n *\n * RAM cost: 0.5 GB * 16/4/1\n *\n * @deprecated\n *\n * use getPlayer\n *\n * @returns Object with various information about your character.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24756,7 +25944,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getCompanyFavor:member(1)",
-              "docComment": "/**\n * SF4.2 - Get company favor.\n *\n * @remarks\n *\n * RAM cost: 1 GB\n *\n * This function will return the amount of favor you have at the specified company. If the company passed in as an argument is invalid, -1 will be returned.\n *\n * @param companyName - Name of the company.\n *\n * @returns Amount of favor you have at the specified company.\n */\n",
+              "docComment": "/**\n * Get company favor.\n *\n * @remarks\n *\n * RAM cost: 1 GB * 16/4/1\n *\n * This function will return the amount of favor you have at the specified company. If the company passed in as an argument is invalid, -1 will be returned.\n *\n * @param companyName - Name of the company.\n *\n * @returns Amount of favor you have at the specified company.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24800,7 +25988,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getCompanyFavorGain:member(1)",
-              "docComment": "/**\n * SF4.2 - Get company favor gain.\n *\n * @remarks\n *\n * RAM cost: 0.75 GB\n *\n * This function will return the amount of favor you will gain for the specified company when you reset by installing Augmentations.\n *\n * @param companyName - Name of the company.\n *\n * @returns Amount of favor you gain at the specified company when you reset by installing Augmentations.\n */\n",
+              "docComment": "/**\n * Get company favor gain.\n *\n * @remarks\n *\n * RAM cost: 0.75 GB * 16/4/1\n *\n * This function will return the amount of favor you will gain for the specified company when you reset by installing Augmentations.\n *\n * @param companyName - Name of the company.\n *\n * @returns Amount of favor you gain at the specified company when you reset by installing Augmentations.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24844,7 +26032,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getCompanyRep:member(1)",
-              "docComment": "/**\n * SF4.2 - Get company reputation.\n *\n * @remarks\n *\n * RAM cost: 1 GB\n *\n * This function will return the amount of reputation you have at the specified company. If the company passed in as an argument is invalid, -1 will be returned.\n *\n * @param companyName - Name of the company.\n *\n * @returns Amount of reputation you have at the specified company.\n */\n",
+              "docComment": "/**\n * Get company reputation.\n *\n * @remarks\n *\n * RAM cost: 1 GB * 16/4/1\n *\n * This function will return the amount of reputation you have at the specified company. If the company passed in as an argument is invalid, -1 will be returned.\n *\n * @param companyName - Name of the company.\n *\n * @returns Amount of reputation you have at the specified company.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24888,7 +26076,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getCrimeChance:member(1)",
-              "docComment": "/**\n * SF4.3 - Get chance to successfully commit a crime.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * This function returns your chance of success at commiting the specified crime.\n *\n * @param crime - Name of crime.\n *\n * @returns Chance of success at commiting the specified crime.\n */\n",
+              "docComment": "/**\n * Get chance to successfully commit a crime.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * This function returns your chance of success at commiting the specified crime.\n *\n * @param crime - Name of crime.\n *\n * @returns Chance of success at commiting the specified crime.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24932,7 +26120,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getCrimeStats:member(1)",
-              "docComment": "/**\n * SF4.3 - Get stats related to a crime.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * Returns the stats of the crime.\n *\n * @param crime - Name of crime. Not case-sensitive\n *\n * @returns The stats of the crime.\n */\n",
+              "docComment": "/**\n * Get stats related to a crime.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * Returns the stats of the crime.\n *\n * @param crime - Name of crime. Not case-sensitive\n *\n * @returns The stats of the crime.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -24977,7 +26165,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getCurrentServer:member(1)",
-              "docComment": "/**\n * SF4.1 - Get the current server.\n *\n * @remarks\n *\n * RAM cost: 2 GB\n *\n * @returns Name of the current server.\n */\n",
+              "docComment": "/**\n * Get the current server.\n *\n * @remarks\n *\n * RAM cost: 2 GB * 16/4/1\n *\n * @returns Name of the current server.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25005,7 +26193,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getFactionFavor:member(1)",
-              "docComment": "/**\n * SF4.2 - Get faction favor.\n *\n * @remarks\n *\n * RAM cost: 1 GB\n *\n * This function returns the amount of favor you have for the specified faction.\n *\n * @param faction - Name of faction.\n *\n * @returns Amount of favor you have for the specified faction.\n */\n",
+              "docComment": "/**\n * Get faction favor.\n *\n * @remarks\n *\n * RAM cost: 1 GB * 16/4/1\n *\n * This function returns the amount of favor you have for the specified faction.\n *\n * @param faction - Name of faction.\n *\n * @returns Amount of favor you have for the specified faction.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25049,7 +26237,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getFactionFavorGain:member(1)",
-              "docComment": "/**\n * SF4.2 - Get faction favor gain.\n *\n * @remarks\n *\n * RAM cost: 0.75 GB\n *\n * This function returns the amount of favor you will gain for the specified faction when you reset by installing Augmentations.\n *\n * @param faction - Name of faction.\n *\n * @returns Amount of favor you will gain for the specified faction when you reset by installing Augmentations.\n */\n",
+              "docComment": "/**\n * Get faction favor gain.\n *\n * @remarks\n *\n * RAM cost: 0.75 GB * 16/4/1\n *\n * This function returns the amount of favor you will gain for the specified faction when you reset by installing Augmentations.\n *\n * @param faction - Name of faction.\n *\n * @returns Amount of favor you will gain for the specified faction when you reset by installing Augmentations.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25093,7 +26281,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getFactionRep:member(1)",
-              "docComment": "/**\n * SF4.2 - Get faction reputation.\n *\n * @remarks\n *\n * RAM cost: 1 GB\n *\n * This function returns the amount of reputation you have for the specified faction.\n *\n * @param faction - Name of faction to work for.\n *\n * @returns Amount of reputation you have for the specified faction.\n */\n",
+              "docComment": "/**\n * Get faction reputation.\n *\n * @remarks\n *\n * RAM cost: 1 GB * 16/4/1\n *\n * This function returns the amount of reputation you have for the specified faction.\n *\n * @param faction - Name of faction to work for.\n *\n * @returns Amount of reputation you have for the specified faction.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25137,7 +26325,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getOwnedAugmentations:member(1)",
-              "docComment": "/**\n * SF4.3 - Get a list of owned augmentation.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * This function returns an array containing the names (as strings) of all Augmentations you have.\n *\n * @param purchased - Specifies whether the returned array should include Augmentations you have purchased but not yet installed. By default, this argument is false which means that the return value will NOT have the purchased Augmentations.\n *\n * @returns Array containing the names (as strings) of all Augmentations you have.\n */\n",
+              "docComment": "/**\n * Get a list of owned augmentation.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * This function returns an array containing the names (as strings) of all Augmentations you have.\n *\n * @param purchased - Specifies whether the returned array should include Augmentations you have purchased but not yet installed. By default, this argument is false which means that the return value will NOT have the purchased Augmentations.\n *\n * @returns Array containing the names (as strings) of all Augmentations you have.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25181,7 +26369,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getStats:member(1)",
-              "docComment": "/**\n * SF4.1 - Returns an object with the Player’s stats.\n *\n * @remarks\n *\n * RAM cost: 0.5 GB\n *\n * @deprecated\n *\n * use getPlayer\n *\n * @returns Object with the Player’s stats.\n *\n * @example\n * ```ts\n * res = getStats();\n * print('My charisma level is: ' + res.charisma);\n * ```\n *\n */\n",
+              "docComment": "/**\n * Returns an object with the Player’s stats.\n *\n * @remarks\n *\n * RAM cost: 0.5 GB * 16/4/1\n *\n * @deprecated\n *\n * use getPlayer\n *\n * @returns Object with the Player’s stats.\n *\n * @example\n * ```ts\n * res = getStats();\n * print('My charisma level is: ' + res.charisma);\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25210,7 +26398,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getUpgradeHomeCoresCost:member(1)",
-              "docComment": "/**\n * SF4.2 - Get the price of upgrading home cores.\n *\n * @remarks\n *\n * RAM cost: 1.5 GB\n *\n * Returns the cost of upgrading the player’s home computer cores.\n *\n * @returns Cost of upgrading the player’s home computer cores.\n */\n",
+              "docComment": "/**\n * Get the price of upgrading home cores.\n *\n * @remarks\n *\n * RAM cost: 1.5 GB * 16/4/1\n *\n * Returns the cost of upgrading the player’s home computer cores.\n *\n * @returns Cost of upgrading the player’s home computer cores.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25238,7 +26426,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#getUpgradeHomeRamCost:member(1)",
-              "docComment": "/**\n * SF4.2 - Get the price of upgrading home RAM.\n *\n * @remarks\n *\n * RAM cost: 1.5 GB\n *\n * Returns the cost of upgrading the player’s home computer RAM.\n *\n * @returns Cost of upgrading the player’s home computer RAM.\n */\n",
+              "docComment": "/**\n * Get the price of upgrading home RAM.\n *\n * @remarks\n *\n * RAM cost: 1.5 GB * 16/4/1\n *\n * Returns the cost of upgrading the player’s home computer RAM.\n *\n * @returns Cost of upgrading the player’s home computer RAM.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25266,7 +26454,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#goToLocation:member(1)",
-              "docComment": "/**\n * SF4.3 - Go to a location.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * Move the player to a specific location.\n *\n * @param locationName - Name of the location.\n *\n * @returns True if the player was moved there, false otherwise.\n */\n",
+              "docComment": "/**\n * Go to a location.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * Move the player to a specific location.\n *\n * @param locationName - Name of the location.\n *\n * @returns True if the player was moved there, false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25310,7 +26498,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#gymWorkout:member(1)",
-              "docComment": "/**\n * SF4.1 - Workout at the gym.\n *\n * @remarks\n *\n * RAM cost: 2 GB\n *\n * This function will automatically set you to start working out at a gym to train a particular stat. If you are already in the middle of some “working” action (such as working at a company, for a faction, or on a program), then running this function will automatically cancel that action and give you your earnings.\n *\n * The cost and experience gains for all of these gyms are the same as if you were to manually visit these gyms and train\n *\n * @param gymName - Name of gym. You must be in the correct city for whatever gym you specify.\n *\n * @param stat - The stat you want to train.\n *\n * @returns True if actions is successfully started, false otherwise.\n */\n",
+              "docComment": "/**\n * Workout at the gym.\n *\n * @remarks\n *\n * RAM cost: 2 GB * 16/4/1\n *\n * This function will automatically set you to start working out at a gym to train a particular stat. If you are already in the middle of some “working” action (such as working at a company, for a faction, or on a program), then running this function will automatically cancel that action and give you your earnings.\n *\n * The cost and experience gains for all of these gyms are the same as if you were to manually visit these gyms and train\n *\n * @param gymName - Name of gym. You must be in the correct city for whatever gym you specify.\n *\n * @param stat - The stat you want to train.\n *\n * @returns True if actions is successfully started, false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25369,7 +26557,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#hospitalize:member(1)",
-              "docComment": "/**\n * SF4.1 - Hospitalize the player.\n *\n * @remarks\n *\n * RAM cost: 0.25 GB\n *\n * @returns The cost of the hospitalization.\n */\n",
+              "docComment": "/**\n * Hospitalize the player.\n *\n * @remarks\n *\n * RAM cost: 0.25 GB * 16/4/1\n *\n * @returns The cost of the hospitalization.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25397,7 +26585,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#installAugmentations:member(1)",
-              "docComment": "/**\n * SF4.3 - Install your purchased augmentations.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * This function will automatically install your Augmentations, resetting the game as usual.\n *\n * @param cbScript - This is a script that will automatically be run after Augmentations are installed (after the reset). This script will be run with no arguments and 1 thread. It must be located on your home computer.\n */\n",
+              "docComment": "/**\n * Install your purchased augmentations.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * This function will automatically install your Augmentations, resetting the game as usual.\n *\n * @param cbScript - This is a script that will automatically be run after Augmentations are installed (after the reset). This script will be run with no arguments and 1 thread. It must be located on your home computer.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25441,7 +26629,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#installBackdoor:member(1)",
-              "docComment": "/**\n * SF4.1 - Run the backdoor command in the terminal.\n *\n * @remarks\n *\n * RAM cost: 2 GB\n *\n * @returns True if the installation was successful.\n */\n",
+              "docComment": "/**\n * Run the backdoor command in the terminal.\n *\n * @remarks\n *\n * RAM cost: 2 GB * 16/4/1\n *\n * @returns Promise waiting for the installation to finish.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25474,7 +26662,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#isBusy:member(1)",
-              "docComment": "/**\n * SF4.1 - Check if the player is busy.\n *\n * @remarks\n *\n * RAM cost: 0.5 GB\n *\n * Returns a boolean indicating whether or not the player is currently performing an ‘action’. These actions include working for a company/faction, studying at a univeristy, working out at a gym, creating a program, committing a crime, or carrying out a Hacking Mission.\n *\n * @returns True if the player is currently performing an ‘action’, false otherwise.\n */\n",
+              "docComment": "/**\n * Check if the player is busy.\n *\n * @remarks\n *\n * RAM cost: 0.5 GB * 16/4/1\n *\n * Returns a boolean indicating whether or not the player is currently performing an ‘action’. These actions include working for a company/faction, studying at a univeristy, working out at a gym, creating a program, committing a crime, or carrying out a Hacking Mission.\n *\n * @returns True if the player is currently performing an ‘action’, false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25502,7 +26690,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#isFocused:member(1)",
-              "docComment": "/**\n * SF4.2 - Check if the player is focused.\n *\n * @remarks\n *\n * RAM cost: 0.1 GB\n *\n * @returns True if the player is focused.\n */\n",
+              "docComment": "/**\n * Check if the player is focused.\n *\n * @remarks\n *\n * RAM cost: 0.1 GB * 16/4/1\n *\n * @returns True if the player is focused.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25530,7 +26718,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#joinFaction:member(1)",
-              "docComment": "/**\n * SF4.2 - Join a faction.\n *\n * @remarks\n *\n * RAM cost: 3 GB\n *\n * This function will automatically accept an invitation from a faction and join it.\n *\n * @param faction - Name of faction to join.\n *\n * @returns True if player joined the faction, and false otherwise.\n */\n",
+              "docComment": "/**\n * Join a faction.\n *\n * @remarks\n *\n * RAM cost: 3 GB * 16/4/1\n *\n * This function will automatically accept an invitation from a faction and join it.\n *\n * @param faction - Name of faction to join.\n *\n * @returns True if player joined the faction, and false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25574,7 +26762,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#manualHack:member(1)",
-              "docComment": "/**\n * SF4.1 - Run the hack command in the terminal.\n *\n * @remarks\n *\n * RAM cost: 2 GB\n *\n * @returns Amount of money stolen by manual hacking.\n */\n",
+              "docComment": "/**\n * Run the hack command in the terminal.\n *\n * @remarks\n *\n * RAM cost: 2 GB * 16/4/1\n *\n * @returns Amount of money stolen by manual hacking.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25607,7 +26795,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#purchaseAugmentation:member(1)",
-              "docComment": "/**\n * SF4.3 - Purchase an augmentation\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * This function will try to purchase the specified Augmentation through the given Faction.\n *\n * This function will return true if the Augmentation is successfully purchased, and false otherwise.\n *\n * @param faction - Name of faction to purchase Augmentation from.\n *\n * @param augmentation - Name of Augmentation to purchase.\n *\n * @returns True if the Augmentation is successfully purchased, and false otherwise.\n */\n",
+              "docComment": "/**\n * Purchase an augmentation\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * This function will try to purchase the specified Augmentation through the given Faction.\n *\n * This function will return true if the Augmentation is successfully purchased, and false otherwise.\n *\n * @param faction - Name of faction to purchase Augmentation from.\n *\n * @param augmentation - Name of Augmentation to purchase.\n *\n * @returns True if the Augmentation is successfully purchased, and false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25666,7 +26854,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#purchaseProgram:member(1)",
-              "docComment": "/**\n * SF4.1 - Purchase a program from the dark web.\n *\n * @remarks\n *\n * RAM cost: 2 GB\n *\n * This function allows you to automatically purchase programs. You MUST have a TOR router in order to use this function. The cost of purchasing programs using this function is the same as if you were purchasing them through the Dark Web using the Terminal buy command.\n *\n * @param programName - Name of program to purchase.\n *\n * @returns True if the specified program is purchased, and false otherwise.\n *\n * @example\n * ```ts\n * // NS1\n * purchaseProgram(\"brutessh.exe\");\n * ```\n *\n * @example\n * ```ts\n * // NS2\n * ns.purchaseProgram(\"brutessh.exe\");\n * ```\n *\n */\n",
+              "docComment": "/**\n * Purchase a program from the dark web.\n *\n * @remarks\n *\n * RAM cost: 2 GB * 16/4/1\n *\n * This function allows you to automatically purchase programs. You MUST have a TOR router in order to use this function. The cost of purchasing programs using this function is the same as if you were purchasing them through the Dark Web using the Terminal buy command.\n *\n * @param programName - Name of program to purchase.\n *\n * @returns True if the specified program is purchased, and false otherwise.\n *\n * @example\n * ```ts\n * // NS1\n * purchaseProgram(\"brutessh.exe\");\n * ```\n *\n * @example\n * ```ts\n * // NS2\n * ns.purchaseProgram(\"brutessh.exe\");\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25710,7 +26898,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#purchaseTor:member(1)",
-              "docComment": "/**\n * SF4.1 - Purchase the TOR router.\n *\n * @remarks\n *\n * RAM cost: 2 GB\n *\n * This function allows you to automatically purchase a TOR router. The cost for purchasing a TOR router using this function is the same as if you were to manually purchase one.\n *\n * @returns True if actions is successful, false otherwise.\n */\n",
+              "docComment": "/**\n * Purchase the TOR router.\n *\n * @remarks\n *\n * RAM cost: 2 GB * 16/4/1\n *\n * This function allows you to automatically purchase a TOR router. The cost for purchasing a TOR router using this function is the same as if you were to manually purchase one.\n *\n * @returns True if actions is successful, false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25738,7 +26926,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#setFocus:member(1)",
-              "docComment": "/**\n * SF4.2 - Set the players focus.\n *\n * @remarks\n *\n * RAM cost: 0.1 GB\n *\n * @returns True if the focus was changed.\n */\n",
+              "docComment": "/**\n * Set the players focus.\n *\n * @remarks\n *\n * RAM cost: 0.1 GB * 16/4/1\n *\n * @returns True if the focus was changed.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25782,7 +26970,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#softReset:member(1)",
-              "docComment": "/**\n * SF4.3 - Soft reset the game.\n *\n * @remarks\n *\n * RAM cost: 5 GB\n *\n * This function will perform a reset even if you don’t have any augmentation installed.\n *\n * @param cbScript - This is a script that will automatically be run after Augmentations are installed (after the reset). This script will be run with no arguments and 1 thread. It must be located on your home computer.\n */\n",
+              "docComment": "/**\n * Soft reset the game.\n *\n * @remarks\n *\n * RAM cost: 5 GB * 16/4/1\n *\n * This function will perform a reset even if you don’t have any augmentation installed.\n *\n * @param cbScript - This is a script that will automatically be run after Augmentations are installed (after the reset). This script will be run with no arguments and 1 thread. It must be located on your home computer.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25826,7 +27014,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#stopAction:member(1)",
-              "docComment": "/**\n * SF4.1 - Stop the current action.\n *\n * @remarks\n *\n * RAM cost: 1 GB\n *\n * This function is used to end whatever ‘action’ the player is currently performing. The player will receive whatever money/experience/etc. he has earned from that action.\n *\n * The actions that can be stopped with this function are:\n *\n * * Studying at a university * Working for a company/faction * Creating a program * Committing a Crime\n *\n * This function will return true if the player’s action was ended. It will return false if the player was not performing an action when this function was called.\n *\n * @returns True if the player’s action was ended, false if the player was not performing an action.\n */\n",
+              "docComment": "/**\n * Stop the current action.\n *\n * @remarks\n *\n * RAM cost: 1 GB * 16/4/1\n *\n * This function is used to end whatever ‘action’ the player is currently performing. The player will receive whatever money/experience/etc. he has earned from that action.\n *\n * The actions that can be stopped with this function are:\n *\n * * Studying at a university * Working for a company/faction * Creating a program * Committing a Crime\n *\n * This function will return true if the player’s action was ended. It will return false if the player was not performing an action when this function was called.\n *\n * @returns True if the player’s action was ended, false if the player was not performing an action.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25854,7 +27042,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#travelToCity:member(1)",
-              "docComment": "/**\n * SF4.1 - Travel to another city.\n *\n * @remarks\n *\n * RAM cost: 2 GB\n *\n * This function allows the player to travel to any city. The cost for using this function is the same as the cost for traveling through the Travel Agency.\n *\n * @param city - City to travel to.\n *\n * @returns True if actions is successful, false otherwise.\n */\n",
+              "docComment": "/**\n * Travel to another city.\n *\n * @remarks\n *\n * RAM cost: 2 GB * 16/4/1\n *\n * This function allows the player to travel to any city. The cost for using this function is the same as the cost for traveling through the Travel Agency.\n *\n * @param city - City to travel to.\n *\n * @returns True if actions is successful, false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25898,7 +27086,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#universityCourse:member(1)",
-              "docComment": "/**\n * SF4.1 - Take university class.\n *\n * @remarks\n *\n * RAM cost: 2 GB\n *\n * This function will automatically set you to start taking a course at a university. If you are already in the middle of some “working” action (such as working at a company, for a faction, or on a program), then running this function will automatically cancel that action and give you your earnings.\n *\n * The cost and experience gains for all of these universities and classes are the same as if you were to manually visit and take these classes.\n *\n * @param universityName - Name of university. You must be in the correct city for whatever university you specify.\n *\n * @param courseName - Name of course.\n *\n * @returns True if actions is successfully started, false otherwise.\n */\n",
+              "docComment": "/**\n * Take university class.\n *\n * @remarks\n *\n * RAM cost: 2 GB * 16/4/1\n *\n * This function will automatically set you to start taking a course at a university. If you are already in the middle of some “working” action (such as working at a company, for a faction, or on a program), then running this function will automatically cancel that action and give you your earnings.\n *\n * The cost and experience gains for all of these universities and classes are the same as if you were to manually visit and take these classes.\n *\n * @param universityName - Name of university. You must be in the correct city for whatever university you specify.\n *\n * @param courseName - Name of course.\n *\n * @returns True if actions is successfully started, false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25957,7 +27145,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#upgradeHomeCores:member(1)",
-              "docComment": "/**\n * SF4.2 - Upgrade home computer cores.\n *\n * @remarks\n *\n * RAM cost: 3 GB\n *\n * This function will upgrade amount of cores on the player’s home computer. The cost is the same as if you were to do it manually.\n *\n * This function will return true if the player’s home computer cores is successfully upgraded, and false otherwise.\n *\n * @returns True if the player’s home computer cores is successfully upgraded, and false otherwise.\n */\n",
+              "docComment": "/**\n * Upgrade home computer cores.\n *\n * @remarks\n *\n * RAM cost: 3 GB * 16/4/1\n *\n * This function will upgrade amount of cores on the player’s home computer. The cost is the same as if you were to do it manually.\n *\n * This function will return true if the player’s home computer cores is successfully upgraded, and false otherwise.\n *\n * @returns True if the player’s home computer cores is successfully upgraded, and false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -25985,7 +27173,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#upgradeHomeRam:member(1)",
-              "docComment": "/**\n * SF4.2 - Upgrade home computer RAM.\n *\n * @remarks\n *\n * RAM cost: 3 GB\n *\n * This function will upgrade amount of RAM on the player’s home computer. The cost is the same as if you were to do it manually.\n *\n * This function will return true if the player’s home computer RAM is successfully upgraded, and false otherwise.\n *\n * @returns True if the player’s home computer RAM is successfully upgraded, and false otherwise.\n */\n",
+              "docComment": "/**\n * Upgrade home computer RAM.\n *\n * @remarks\n *\n * RAM cost: 3 GB * 16/4/1\n *\n * This function will upgrade amount of RAM on the player’s home computer. The cost is the same as if you were to do it manually.\n *\n * This function will return true if the player’s home computer RAM is successfully upgraded, and false otherwise.\n *\n * @returns True if the player’s home computer RAM is successfully upgraded, and false otherwise.\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -26013,7 +27201,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#workForCompany:member(1)",
-              "docComment": "/**\n * SF4.2 - Work for a company.\n *\n * @remarks\n *\n * RAM cost: 3 GB\n *\n * This function will automatically set you to start working at the company at which you are employed. If you are already in the middle of some “working” action (such as working for a faction, training at a gym, or creating a program), then running this function will automatically cancel that action and give you your earnings.\n *\n * This function will return true if the player starts working, and false otherwise.\n *\n * Note that when you are working for a company, you will not actually receive your earnings (reputation, money, experience) until you FINISH the action.\n *\n * @param companyName - Name of company to work for. Must be an exact match. Optional. If not specified, this argument defaults to the last job that you worked\n *\n * @param focus - Acquire player focus on this work operation. Optional. Defaults to true.\n *\n * @returns True if the player starts working, and false otherwise.\n *\n * @example\n * ```ts\n * // NS1:\n * //If you only want to work until you get 100,000 company reputation. One small hack to get around this is to continuously restart the action to receive your earnings:\n * while (getCompanyRep(COMPANY HERE) < VALUE) {\n *    workForCompany();\n *    sleep(60000);\n * }\n * //This way, your company reputation will be updated every minute.\n * ```\n *\n * @example\n * ```ts\n * // NS2:\n * //If you only want to work until you get 100,000 company reputation. One small hack to get around this is to continuously restart the action to receive your earnings:\n * while (ns.getCompanyRep(COMPANY HERE) < VALUE) {\n *    ns.workForCompany();\n *    await ns.sleep(60000);\n * }\n * //This way, your company reputation will be updated every minute.\n * ```\n *\n */\n",
+              "docComment": "/**\n * Work for a company.\n *\n * @remarks\n *\n * RAM cost: 3 GB * 16/4/1\n *\n * This function will automatically set you to start working at the company at which you are employed. If you are already in the middle of some “working” action (such as working for a faction, training at a gym, or creating a program), then running this function will automatically cancel that action and give you your earnings.\n *\n * This function will return true if the player starts working, and false otherwise.\n *\n * Note that when you are working for a company, you will not actually receive your earnings (reputation, money, experience) until you FINISH the action.\n *\n * @param companyName - Name of company to work for. Must be an exact match. Optional. If not specified, this argument defaults to the last job that you worked\n *\n * @param focus - Acquire player focus on this work operation. Optional. Defaults to true.\n *\n * @returns True if the player starts working, and false otherwise.\n *\n * @example\n * ```ts\n * // NS1:\n * //If you only want to work until you get 100,000 company reputation. One small hack to get around this is to continuously restart the action to receive your earnings:\n * while (getCompanyRep(COMPANY HERE) < VALUE) {\n *    workForCompany();\n *    sleep(60000);\n * }\n * //This way, your company reputation will be updated every minute.\n * ```\n *\n * @example\n * ```ts\n * // NS2:\n * //If you only want to work until you get 100,000 company reputation. One small hack to get around this is to continuously restart the action to receive your earnings:\n * while (ns.getCompanyRep(COMPANY HERE) < VALUE) {\n *    ns.workForCompany();\n *    await ns.sleep(60000);\n * }\n * //This way, your company reputation will be updated every minute.\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -26072,7 +27260,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Singularity#workForFaction:member(1)",
-              "docComment": "/**\n * SF4.2 - Work for a faction.\n *\n * @remarks\n *\n * RAM cost: 3 GB\n *\n * This function will automatically set you to start working for the specified faction. Obviously, you must be a member of the faction or else this function will fail. If you are already in the middle of some “working” action (such as working for a company, training at a gym, or creating a program), then running this function will automatically cancel that action and give you your earnings.\n *\n * This function will return true if you successfully start working for the specified faction, and false otherwise.\n *\n * Note that when you are working for a faction, you will not actually receive your earnings (reputation, experience) until you FINISH the action.\n *\n * @param faction - Name of faction to work for.\n *\n * @param workType - Type of work to perform for the faction.\n *\n * @param focus - Acquire player focus on this work operation. Optional. Defaults to true.\n *\n * @returns True if the player starts working, and false otherwise.\n *\n * @example\n * ```ts\n * // NS1:\n * //If you only want to work until you get 100,000 faction reputation. One small hack to get around this is to continuously restart the action to receive your earnings:\n * while (getFactionRep(FACTION NAME) < VALUE) {\n *    workForFaction(FACNAME, WORKTYPE);\n *    sleep(60000);\n * }\n * //This way, your faction reputation will be updated every minute.\n * ```\n *\n * @example\n * ```ts\n * // NS2:\n * //If you only want to work until you get 100,000 faction reputation. One small hack to get around this is to continuously restart the action to receive your earnings:\n * while (ns.getFactionRep(FACTION NAME) < VALUE) {\n *    ns.workForFaction(FACNAME, WORKTYPE);\n *    await ns.sleep(60000);\n * }\n * //This way, your faction reputation will be updated every minute.\n * ```\n *\n */\n",
+              "docComment": "/**\n * Work for a faction.\n *\n * @remarks\n *\n * RAM cost: 3 GB * 16/4/1\n *\n * This function will automatically set you to start working for the specified faction. Obviously, you must be a member of the faction or else this function will fail. If you are already in the middle of some “working” action (such as working for a company, training at a gym, or creating a program), then running this function will automatically cancel that action and give you your earnings.\n *\n * This function will return true if you successfully start working for the specified faction, and false otherwise.\n *\n * Note that when you are working for a faction, you will not actually receive your earnings (reputation, experience) until you FINISH the action.\n *\n * @param faction - Name of faction to work for.\n *\n * @param workType - Type of work to perform for the faction.\n *\n * @param focus - Acquire player focus on this work operation. Optional. Defaults to true.\n *\n * @returns True if the player starts working, and false otherwise.\n *\n * @example\n * ```ts\n * // NS1:\n * //If you only want to work until you get 100,000 faction reputation. One small hack to get around this is to continuously restart the action to receive your earnings:\n * while (getFactionRep(FACTION NAME) < VALUE) {\n *    workForFaction(FACNAME, WORKTYPE);\n *    sleep(60000);\n * }\n * //This way, your faction reputation will be updated every minute.\n * ```\n *\n * @example\n * ```ts\n * // NS2:\n * //If you only want to work until you get 100,000 faction reputation. One small hack to get around this is to continuously restart the action to receive your earnings:\n * while (ns.getFactionRep(FACTION NAME) < VALUE) {\n *    ns.workForFaction(FACNAME, WORKTYPE);\n *    await ns.sleep(60000);\n * }\n * //This way, your faction reputation will be updated every minute.\n * ```\n *\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -29824,6 +31012,35 @@
           "members": [
             {
               "kind": "MethodSignature",
+              "canonicalReference": "bitburner!UserInterface#getStyles:member(1)",
+              "docComment": "/**\n * Get the current styles\n *\n * @remarks\n *\n * RAM cost: cost: 0 GB\n *\n * @returns An object containing the player's styles\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getStyles(): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyleSettings",
+                  "canonicalReference": "bitburner!IStyleSettings:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getStyles"
+            },
+            {
+              "kind": "MethodSignature",
               "canonicalReference": "bitburner!UserInterface#getTheme:member(1)",
               "docComment": "/**\n * Get the current theme\n *\n * @remarks\n *\n * RAM cost: cost: 0 GB\n *\n * @returns An object containing the theme's colors\n */\n",
               "excerptTokens": [
@@ -29853,6 +31070,34 @@
             },
             {
               "kind": "MethodSignature",
+              "canonicalReference": "bitburner!UserInterface#resetStyles:member(1)",
+              "docComment": "/**\n * Resets the player's styles to the default values\n *\n * @remarks\n *\n * RAM cost: cost: 0 GB\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "resetStyles(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "resetStyles"
+            },
+            {
+              "kind": "MethodSignature",
               "canonicalReference": "bitburner!UserInterface#resetTheme:member(1)",
               "docComment": "/**\n * Resets the player's theme to the default values\n *\n * @remarks\n *\n * RAM cost: cost: 0 GB\n */\n",
               "excerptTokens": [
@@ -29878,6 +31123,51 @@
               "overloadIndex": 1,
               "parameters": [],
               "name": "resetTheme"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!UserInterface#setStyles:member(1)",
+              "docComment": "/**\n * Sets the current styles\n *\n * @remarks\n *\n * RAM cost: cost: 0 GB\n *\n * @example\n *\n * Usage example (NS2)\n * ```ts\n * const styles = ns.ui.getStyles();\n * styles.fontFamily = 'Comic Sans Ms';\n * ns.ui.setStyles(styles);\n * ```\n *\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setStyles(newStyles: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "IStyleSettings",
+                  "canonicalReference": "bitburner!IStyleSettings:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "newStyles",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "setStyles"
             },
             {
               "kind": "MethodSignature",
@@ -30039,6 +31329,32 @@
               "isOptional": false,
               "releaseTag": "Public",
               "name": "sizeUsed",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "bitburner!Warehouse#smartSupplyEnabled:member",
+              "docComment": "/**\n * Smart Supply status in the warehouse\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "smartSupplyEnabled: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "releaseTag": "Public",
+              "name": "smartSupplyEnabled",
               "propertyTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -30583,6 +31899,93 @@
             },
             {
               "kind": "MethodSignature",
+              "canonicalReference": "bitburner!WarehouseAPI#getPurchaseWarehouseCost:member(1)",
+              "docComment": "/**\n * Gets the cost to purchase a warehouse\n *\n * @returns cost\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getPurchaseWarehouseCost(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "getPurchaseWarehouseCost"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!WarehouseAPI#getUpgradeWarehouseCost:member(1)",
+              "docComment": "/**\n * Gets the cost to upgrade a warehouse to the next level\n *\n * @returns cost to upgrade\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getUpgradeWarehouseCost(adivisionName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", acityName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "adivisionName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "acityName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "getUpgradeWarehouseCost"
+            },
+            {
+              "kind": "MethodSignature",
               "canonicalReference": "bitburner!WarehouseAPI#getWarehouse:member(1)",
               "docComment": "/**\n * Get warehouse data\n *\n * @param divisionName - Name of the division\n *\n * @param cityName - Name of the city\n *\n * @returns warehouse data\n */\n",
               "excerptTokens": [
@@ -30640,6 +32043,65 @@
                 }
               ],
               "name": "getWarehouse"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "bitburner!WarehouseAPI#hasWarehouse:member(1)",
+              "docComment": "/**\n * Check if you have a warehouse in city\n *\n * @returns true if warehouse is present, false if not\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "hasWarehouse(adivisionName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", acityName: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isOptional": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "adivisionName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "acityName",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "hasWarehouse"
             },
             {
               "kind": "MethodSignature",
