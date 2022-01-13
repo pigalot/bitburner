@@ -5237,7 +5237,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Corporation#createCorporation:member(1)",
-              "docComment": "/**\n * Create a Corporation\n *\n * @param divisionName - Name of the division\n *\n * @returns true if created and false if not\n */\n",
+              "docComment": "/**\n * Create a Corporation\n *\n * @param divisionName - Name of the division\n *\n * @param selfFund - If you should self fund, defaults to true, false will only work on Bitnode 3\n *\n * @returns true if created and false if not\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",
@@ -5897,7 +5897,7 @@
             {
               "kind": "MethodSignature",
               "canonicalReference": "bitburner!Corporation#unlockUpgrade:member(1)",
-              "docComment": "/**\n * Unlock an upgrade.npm run doc\n *\n * @param upgradeName - Name of the upgrade\n */\n",
+              "docComment": "/**\n * Unlock an upgrade\n *\n * @param upgradeName - Name of the upgrade\n */\n",
               "excerptTokens": [
                 {
                   "kind": "Content",

@@ -845,6 +845,7 @@ export declare interface Corporation extends WarehouseAPI, OfficeAPI {
     /**
      * Create a Corporation
      * @param divisionName - Name of the division
+     * @param selfFund - If you should self fund, defaults to true, false will only work on Bitnode 3
      * @returns true if created and false if not 
      */
     createCorporation(corporationName: string, selfFund: boolean): boolean;
@@ -925,7 +926,7 @@ export declare interface Corporation extends WarehouseAPI, OfficeAPI {
      */
     expandCity(divisionName: string, cityName: string): void;
     /**
-     * Unlock an upgrade.npm run doc
+     * Unlock an upgrade
      * @param upgradeName - Name of the upgrade
      */
     unlockUpgrade(upgradeName: string): void;
