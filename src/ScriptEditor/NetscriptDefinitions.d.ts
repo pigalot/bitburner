@@ -6271,7 +6271,7 @@ export interface Corporation extends WarehouseAPI, OfficeAPI {
    */
   expandCity(divisionName: string, cityName: string): void;
   /**
-   * Unlock an upgrade.npm run doc
+   * Unlock an upgrade
    * @param upgradeName - Name of the upgrade
    */
   unlockUpgrade(upgradeName: string): void;
