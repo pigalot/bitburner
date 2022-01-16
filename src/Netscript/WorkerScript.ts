@@ -36,6 +36,8 @@ export class WorkerScript {
    * Holds the Promise reject() function while the script is "blocked" by an async op
    */
   delayReject?: (reason?: any) => void;
+  delayResolve?: () => void;
+  endTime: number;
 
   /**
    * Stores names of all functions that have logging disabled
@@ -114,6 +116,7 @@ export class WorkerScript {
   constructor(runningScriptObj: RunningScript, pid: number, nsFuncsGenerator?: (ws: WorkerScript) => any) {
     this.name = runningScriptObj.filename;
     this.hostname = runningScriptObj.server;
+    this.endTime = 0;
 
     const sanitizedPid = Math.round(pid);
     if (typeof sanitizedPid !== "number" || isNaN(sanitizedPid)) {

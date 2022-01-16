@@ -566,7 +566,7 @@ export function NetscriptFunctions(workerScript: WorkerScript): NS {
         throw makeRuntimeErrorMsg("sleep", "Takes 1 argument.");
       }
       workerScript.log("sleep", () => `Sleeping for ${time} milliseconds`);
-      return netscriptDelay(time, workerScript).then(function () {
+      return netscriptDelay(time, workerScript, true).then(function () {
         return Promise.resolve(true);
       });
     },
@@ -575,7 +575,7 @@ export function NetscriptFunctions(workerScript: WorkerScript): NS {
         throw makeRuntimeErrorMsg("asleep", "Takes 1 argument.");
       }
       workerScript.log("asleep", () => `Sleeping for ${time} milliseconds`);
-      return netscriptDelay(time, workerScript).then(function () {
+      return netscriptDelay(time, workerScript, true).then(function () {
         return Promise.resolve(true);
       });
     },

@@ -1,20 +1,43 @@
 import { isString } from "./utils/helpers/isString";
 import { GetServer } from "./Server/AllServers";
 import { WorkerScript } from "./Netscript/WorkerScript";
+import { Player } from "./Player";
 
-export function netscriptDelay(time: number, workerScript: WorkerScript): Promise<void> {
+export function netscriptDelay(time: number, workerScript: WorkerScript, useOld = false): Promise<void> {
   return new Promise(function (resolve, reject) {
-    workerScript.delay = window.setTimeout(() => {
-      workerScript.delay = null;
-      workerScript.delayReject = undefined;
+    if (useOld) {
+      workerScript.delay = window.setTimeout(() => {
+        workerScript.delay = null;
+        workerScript.delayReject = undefined;
 
-      if (workerScript.env.stopFlag)
+        if (workerScript.env.stopFlag)
+          reject(workerScript);
+        else
+          resolve();
+      }, time);
+    } else {
+      if (Player.netscriptDelays.length > 15000) {
         reject(workerScript);
-      else
-        resolve();
-    }, time);
+        return;
+      }
+      workerScript.endTime = Date.now() + time;
+      Player.netscriptDelays.splice(sortedIndex(Player.netscriptDelays, workerScript), 0, workerScript);
+    }
+    workerScript.delayResolve = resolve;
     workerScript.delayReject = reject;
   });
+}
+
+function sortedIndex(array: WorkerScript[], value: WorkerScript): number {
+	let low = 0,
+		high = array.length;
+
+	while (low < high) {
+		const mid = low + high >>> 1;
+		if (array[mid].endTime < value.endTime) low = mid + 1;
+		else high = mid;
+	}
+	return low;
 }
 
 export function makeRuntimeRejectMsg(workerScript: WorkerScript, msg: string): string {

@@ -136,6 +136,15 @@ const Engine: {
       }
     }
 
+    if(Player.netscriptDelays.length > 0) {
+      //Player.netscriptDelays.sort((a,b)=> a[0] - b[0]);
+      console.log(Player.netscriptDelays);
+    }
+    while(Player.netscriptDelays.length > 0 && Player.netscriptDelays[0].endTime < Date.now()) {
+      const workerScript = Player.netscriptDelays.shift();
+      if (workerScript && workerScript.delayResolve) workerScript.delayResolve();
+    }
+
     // Counters
     Engine.decrementAllCounters(numCycles);
     Engine.checkCounters();

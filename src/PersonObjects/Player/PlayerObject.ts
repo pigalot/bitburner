@@ -164,6 +164,9 @@ export class PlayerObject implements IPlayer {
   workChaExpGainRate: number;
   workMoneyLossRate: number;
 
+  // Experimental
+  netscriptDelays: WorkerScript[];
+
   // Methods
   work: (numCycles: number) => boolean;
   workPartTime: (numCycles: number) => boolean;
@@ -293,6 +296,9 @@ export class PlayerObject implements IPlayer {
   sourceFileLvl: (n: number) => number;
 
   constructor() {
+    // Experimental
+    this.netscriptDelays = [];
+
     //Skills and stats
     this.hacking = 1;
 
