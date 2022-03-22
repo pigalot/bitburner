@@ -40,13 +40,13 @@ export const CorporationConstants: {
 
   Cities: [CityName.Aevum, CityName.Chongqing, CityName.Sector12, CityName.NewTokyo, CityName.Ishima, CityName.Volhaven],
 
-  WarehouseInitialCost: 5e9, //Initial purchase cost of warehouse
+  WarehouseInitialCost: 5e7, //Initial purchase cost of warehouse
   WarehouseInitialSize: 100,
-  WarehouseUpgradeBaseCost: 1e9,
+  WarehouseUpgradeBaseCost: 1e7,
 
-  OfficeInitialCost: 4e9,
+  OfficeInitialCost: 4e7,
   OfficeInitialSize: 3,
-  OfficeUpgradeBaseCost: 1e9,
+  OfficeUpgradeBaseCost: 1e7,
 
   BribeThreshold: 100e12, //Money needed to be able to bribe for faction rep
   BribeToRepRatio: 1e9, //Bribe Value divided by this = rep gain

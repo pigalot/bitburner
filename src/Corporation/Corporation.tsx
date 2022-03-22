@@ -25,7 +25,7 @@ export class Corporation {
   divisions: Industry[] = [];
 
   //Financial stats
-  funds = 150e9;
+  funds = 150e7;
   revenue = 0;
   expenses = 0;
   fundingRound = 0;
@@ -167,16 +167,16 @@ export class Corporation {
         profit *= (100 - this.dividendPercentage) / 100;
       }
 
-      val = this.funds + profit * 85e3;
+      val = this.funds + profit * 85e1;
       val *= Math.pow(1.1, this.divisions.length);
       val = Math.max(val, 0);
     } else {
-      val = 10e9 + Math.max(this.funds, 0) / 3; //Base valuation
+      val = 10e7 + Math.max(this.funds, 0) / 3; //Base valuation
       if (profit > 0) {
-        val += profit * 315e3;
+        val += profit * 315e1;
         val *= Math.pow(1.1, this.divisions.length);
       } else {
-        val = 10e9 * Math.pow(1.1, this.divisions.length);
+        val = 10e7 * Math.pow(1.1, this.divisions.length);
       }
       val -= val % 1e6; //Round down to nearest millionth
     }

@@ -10,7 +10,7 @@ export const CorporationUnlockUpgrades: IMap<CorporationUnlockUpgrade> = {
   //Lets you export goods
   "0": [
     0,
-    20e9,
+    20e7,
     "Export",
     "Develop infrastructure to export your materials to your other facilities. " +
       "This allows you to move materials around between different divisions and cities.",
@@ -19,7 +19,7 @@ export const CorporationUnlockUpgrades: IMap<CorporationUnlockUpgrade> = {
   //Lets you buy exactly however many required materials you need for production
   "1": [
     1,
-    25e9,
+    25e7,
     "Smart Supply",
     "Use advanced AI to anticipate your supply needs. " +
       "This allows you to purchase exactly however many materials you need for production.",
@@ -28,7 +28,7 @@ export const CorporationUnlockUpgrades: IMap<CorporationUnlockUpgrade> = {
   //Displays each material/product's demand
   "2": [
     2,
-    5e9,
+    5e7,
     "Market Research - Demand",
     "Mine and analyze market data to determine the demand of all resources. " +
       "The demand attribute, which affects sales, will be displayed for every material and product.",
@@ -37,7 +37,7 @@ export const CorporationUnlockUpgrades: IMap<CorporationUnlockUpgrade> = {
   //Display's each material/product's competition
   "3": [
     3,
-    5e9,
+    5e7,
     "Market Data - Competition",
     "Mine and analyze market data to determine how much competition there is on the market " +
       "for all resources. The competition attribute, which affects sales, will be displayed for " +
@@ -45,7 +45,7 @@ export const CorporationUnlockUpgrades: IMap<CorporationUnlockUpgrade> = {
   ],
   "4": [
     4,
-    10e9,
+    10e7,
     "VeChain",
     "Use AI and blockchain technology to identify where you can improve your supply chain systems. " +
       "This upgrade will allow you to view a wide array of useful statistics about your " +
@@ -53,18 +53,18 @@ export const CorporationUnlockUpgrades: IMap<CorporationUnlockUpgrade> = {
   ],
   "5": [
     5,
-    500e12,
+    500e10,
     "Shady Accounting",
     "Utilize unscrupulous accounting practices and pay off government officials to save money " +
       "on taxes. This reduces the dividend tax rate by 5%.",
   ],
   "6": [
     6,
-    2e15,
+    2e13,
     "Government Partnership",
     "Help national governments further their agendas in exchange for lowered taxes. " +
       "This reduces the dividend tax rate by 10%",
   ],
-  "7": [7, 50e9, "Warehouse API", "Enables the warehouse API."],
-  "8": [8, 50e9, "Office API", "Enables the office API."],
+  "7": [7, 50e7, "Warehouse API", "Enables the warehouse API."],
+  "8": [8, 50e7, "Office API", "Enables the office API."],
 };

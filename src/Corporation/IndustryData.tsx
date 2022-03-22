@@ -42,20 +42,20 @@ export const Industries: IIndustryMap<string> = {
 
 // Map of how much money it takes to start each industry
 export const IndustryStartingCosts: IIndustryMap<number> = {
-  Energy: 225e9,
-  Utilities: 150e9,
-  Agriculture: 40e9,
-  Fishing: 80e9,
-  Mining: 300e9,
-  Food: 10e9,
-  Tobacco: 20e9,
-  Chemical: 70e9,
-  Pharmaceutical: 200e9,
-  Computer: 500e9,
-  Robotics: 1e12,
-  Software: 25e9,
-  Healthcare: 750e9,
-  RealEstate: 600e9,
+  Energy: 225e7,
+  Utilities: 150e7,
+  Agriculture: 40e7,
+  Fishing: 80e7,
+  Mining: 300e7,
+  Food: 10e7,
+  Tobacco: 20e7,
+  Chemical: 70e7,
+  Pharmaceutical: 200e7,
+  Computer: 500e7,
+  Robotics: 1e10,
+  Software: 25e7,
+  Healthcare: 750e7,
+  RealEstate: 600e7,
 };
 
 // Map of description for each industry

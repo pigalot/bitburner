@@ -10,7 +10,7 @@ export const CorporationUpgrades: IMap<CorporationUpgrade> = {
   //Smart factories, increases production
   "0": [
     0,
-    2e9,
+    2e7,
     1.06,
     0.03,
     "Smart Factories",
@@ -21,7 +21,7 @@ export const CorporationUpgrades: IMap<CorporationUpgrade> = {
   //Smart warehouses, increases storage size
   "1": [
     1,
-    2e9,
+    2e7,
     1.06,
     0.1,
     "Smart Storage",
@@ -32,7 +32,7 @@ export const CorporationUpgrades: IMap<CorporationUpgrade> = {
   //Advertise through dreams, passive popularity/ awareness gain
   "2": [
     2,
-    4e9,
+    4e7,
     1.1,
     0.001,
     "DreamSense",
@@ -46,7 +46,7 @@ export const CorporationUpgrades: IMap<CorporationUpgrade> = {
   //Makes advertising more effective
   "3": [
     3,
-    4e9,
+    4e7,
     1.5,
     0.005,
     "Wilson Analytics",
@@ -58,7 +58,7 @@ export const CorporationUpgrades: IMap<CorporationUpgrade> = {
   //Augmentation for employees, increases cre
   "4": [
     4,
-    1e9,
+    1e7,
     1.06,
     0.1,
     "Nuoptimal Nootropic Injector Implants",
@@ -70,7 +70,7 @@ export const CorporationUpgrades: IMap<CorporationUpgrade> = {
   //Augmentation for employees, increases cha
   "5": [
     5,
-    1e9,
+    1e7,
     1.06,
     0.1,
     "Speech Processor Implants",
@@ -81,7 +81,7 @@ export const CorporationUpgrades: IMap<CorporationUpgrade> = {
   //Augmentation for employees, increases int
   "6": [
     6,
-    1e9,
+    1e7,
     1.06,
     0.1,
     "Neural Accelerators",
@@ -93,7 +93,7 @@ export const CorporationUpgrades: IMap<CorporationUpgrade> = {
   //Augmentation for employees, increases eff
   "7": [
     7,
-    1e9,
+    1e7,
     1.06,
     0.1,
     "FocusWires",
@@ -104,7 +104,7 @@ export const CorporationUpgrades: IMap<CorporationUpgrade> = {
   //Improves sales of materials/products
   "8": [
     8,
-    1e9,
+    1e7,
     1.07,
     0.01,
     "ABC SalesBots",
@@ -116,7 +116,7 @@ export const CorporationUpgrades: IMap<CorporationUpgrade> = {
   //Improves scientific research rate
   "9": [
     9,
-    5e9,
+    5e7,
     1.07,
     0.05,
     "Project Insight",
